@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asynnawait</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        const students = [
+            {name: 'Rabin Aryal', age:26},
+            {name: 'Bikash Aryal', age:27},
+            {name: 'Sunil Aryal', age:28}
+
+        ]
+        //define the function
+        const showStudent=()=>{
+            setTimeout(()=>{
+                let result =""
+                students.forEach(info=>{
+                    result+=`<ul>
+                        <li>${info.name}
+                            </li>
+
+
+                        </ul>`
+                })
+                document.querySelector('div').innerHTML = `${result}`
+            },5000)
+        }
+
+
+          const addStudent=(newdata, callback)=>{
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                students.push(newdata)
+                const error = false
+                if(!error){
+                  resolve()
+                  }else{
+                    reject("something is wrong")
+                }
+            },2000)
+        })
+    }
+    const demoFunction = async()=>{
+        await addStudent({name:'Rabin Aryal', age:27})
+        showStudent()
+    }
+        
+        //call the function
+        showStudent()
+        //call the function addstudent
+        demoFunction()
+        addStudent({name: 'Rk Prakhar', age:29})
+        // .then(showStudent)
+        // .catch(err=>console.log(err))
+    </script>
+</body>
+</html>

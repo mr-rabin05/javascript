@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage and session storage</title>
+</head>
+<body>
+    <button class="btn">Remove</button>
+    <script>
+        
+        // Local Storage
+        localStorage.setItem('name', 'Rabin');
+        const data = localStorage.getItem('name')
+        console.log(data); // Rabin
+
+        document.querySelector('.btn').addEventListener('click', ()=>{
+            return localStorage.removeItem('name')
+        })
+
+        //JSON - javascript object notation
+        const student = {
+            'first_name': 'Rabin',
+            'last_name' : 'Aryal',
+            'age' : 25,
+            'subject' : ['HTNL', 'CSS', 'JAVASCRIPT'],
+            'height' : '5.9inch',
+            'weight' : '60kg'
+        }
+        localStorage.setItem('data', JSON.stringify(student))//to convert JSON object into string
+        const test = JSON.parse(localStorage.getItem('data'))//to convert string into JSON object
+        console.log(test)
+        console.log(test.first_name)
+        console.log(test.subject[2])
+
+
+        
+  
+
+    </script>
+</body>
+</html>

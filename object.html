@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+    <style>
+        *{
+            margin: 2px;
+            padding: 2px;
+            text-align: center;
+        }
+        /* table ,tr,td{
+
+            width: 50%;
+            border: 5px solid aqua;
+            border-collapse: collapse;
+        } */
+    </style>
+</head>
+<body>
+    <table  >
+        
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+                <th>contact</th>
+            </tr>
+            
+            <tr>
+                <td id="Name"></td>
+                <td id="age"></td>
+                <td id="address"></td>
+                <td id="contact"></td>
+            </tr>
+            
+        
+    </table>
+
+    <script>
+        const student = {name: 'Rabin Aryal' ,
+        address : "syangja" , age: 26 , contact:987465475784}
+        const student1 = {name: 'Ram Pudasaini' ,
+        address : "Nuwakot" , age: 29 , contact:98746599084}
+       
+
+    // document.write(`${student.name} &nbsp; ${student.age} &nbsp`)
+    // document.write(`${student.address}`)
+    document.getElementsByid('name').innerHTML = student. name
+    document.getElementsByid('age').innerHTML =  student.address
+    document.getElementsByid('address').innerHTML =student. age
+    document.getElementsByid('contact').innerHTML = student.contact
+
+
+    </script>
+    
+</body>
+</html>

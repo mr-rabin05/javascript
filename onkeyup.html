@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>on key up</title>
+    <!-- key up didn't  perform when we hold the key /  it perform when we up leave the key   -->
+</head>
+<body>
+    <input type="password"  name="pwd" id="pwd">
+    <h2 id="result" class="demo"></h2>
+    <h3 class="demo"></h3>
+    <h4 class="demo"></h4>
+    <h5 class="demo"></h5>
+
+    <script>
+        const pwdinput = document.querySelector('#pwd')
+    //     function demofunction(){
+    //     document.getElementById('result').innerHTML = pwdinput. value
+    // } 
+    // document.addEventListener('keyup', demofunction)
+
+
+     // dom by id
+
+    document.addEventListener('keyup', ()=>{
+        document.getElementById('result').innerHTML = pwdinput. value. 
+        document.getElementById('result').style.backgroundColor = 'yellow'
+        document.getElementById('result').style.textAlign='center'
+
+        
+
+    })
+  
+   
+    // dom by class
+    // document.addEventListener('keyup', function(){
+    //     document.getElementsByClassName('demo')[3].innerHTML = pwdinput. value
+    //     document.getElementsByClassName('demo')[3].style.backgroundColor = 'yellow'
+    //     document.getElementsByClassName('demo')[3] .style.textAlign='center'
+        
+
+    // })
+    
+
+    </script>
+</body>
+</html>

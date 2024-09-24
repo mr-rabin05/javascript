@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string method</title>
+</head>
+<body>
+    <script>
+        const text = 'we are studing javascript programming language and javascript is used for interactive the web pages.'
+
+        document.write(`${text} <br>` )
+        document.write(`${text[1]} <br>`)
+        //length gives the total number of character present in string.
+        document.write(`${text.length}<br>`)
+        //uppercase ()
+        //lowercase()
+        document.write(`${text.toUpperCase()} <br>`)
+        document.write(`${text.toLowerCase()} <br>`)
+        //indexof()-gives the index of particular words
+        document.write(`${text.indexOf('javascript')} <br>`)
+        //search() 
+        document.write(`${text.search('interactive')} <br>`)
+
+        //lastindexof()- 
+        document.write(`${text.lastIndexOf('javascript')} <br>`)
+
+        document.write(`${text.split('and')} <br>`)
+
+        //substring => certain part of string
+        //slice(start,end)
+        //substring(start,end)
+        //substr(start,length)
+
+        document.write(`${text.slice(5,10)} <br>`)
+        document.write(`${text.substring(5,30)} <br>`)
+        document.write(`${text.substr(5,10)} <br>`)
+
+        //replace()
+        document.write(`${text.replace('javascript' , 'js')}<br>`)
+        //replaceAll()
+        document.write(`${text.replaceAll('javascript' , 'js')}<br>`)
+
+
+        //trim()
+        const test = '   hello world   '
+        document.write(`${test.trim()}<br>`)
+
+        //include()
+        document.write(`${text.includes('interactive')}<br>`)
+
+        
+
+
+
+
+
+    </script>
+
+
+    
+</body>
+</html>

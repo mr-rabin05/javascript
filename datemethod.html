@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date method</title>
+</head>
+<body>
+    <script>
+        const date = new Date()
+        document.write(`${date}<br>`)
+        //.getFullyear()
+        document.write(`${date.getFullYear()}<br>`)
+        //.getMonth()
+        document.write(`${date.getMonth()}<br>`)
+        //.getDate()-> 0-30
+        document.write(`${date.getDate()}<br>`)
+        //.getHours-> 0-23
+        document.write(`${date.getHours()}<br>`)
+        //.getDay()-0-31
+        document.write(`${date.getDay()}<br>`)
+        //.getMinutes
+        document.write(`${date.getMinutes()}<br>`)
+        //.getSeconds
+        document.write(`${date.getSeconds()}<br>`)
+        //.getMilliseconds()-0-999
+        document.write(`${date.getMilliseconds()}<br>`)
+        document.write(`${date.toLocaleDateString()}<br>`)//we can set our own local date 
+        document.write(`${date.toLocaleTimeString()}<br>`)//we can set our on locat time
+
+
+
+        const d = new Date()
+        d.setFullYear(2030)
+        document.write(`${d.getFullYear()}<br>`)
+
+        d.setMonth(1)
+        document.write(`${d.getMonth()}<br>`)
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

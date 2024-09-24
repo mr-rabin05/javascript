@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in loop</title>
+</head>
+<body>
+    <script>
+        const student = {
+            'fname':'Rabin',
+            'lname':'Aryal',
+            'age':26
+
+        }
+        fruits =['apple','mango','banana']
+        for(value in student){
+            document.write(`${student[value]}<br>`)
+        }
+        for(name of fruits){
+            document.write(`${name}<br>`)
+        }
+        for(category in fruits){
+            document.write(`${fruits[category]}<br>`)
+        }
+    </script>
+    
+</body>
+</html>

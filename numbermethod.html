@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number method</title>
+</head>
+<body>
+    <script>
+        const num = 399.246789
+        document.write(`${num} <br>`)
+        //tofixed() -> givs specific numbers after decimal points
+        document.write(`${num.toFixed(2)} <br>`)
+        document.write(`${num.toFixed(1)} <br>`)
+
+        //topredision()-> gives specific number form the start
+
+        document.write(`${num.toPrecision(3)}<br>`)
+        document.write(`${num.toPrecision(5)}<br>`)
+        document.write(`${num.toPrecision(2)}<br>`)
+
+        const x = '10.9'
+        document.write(`${typeof(x)}<br>`)
+        //convert
+        //Number
+        //ParseInt
+        //parseFloat
+        // document.write(`${Number(x)}<br>`)
+        document.write(`${[parseInt(x)]} <br>`)
+        document.write(`${[parseFloat(x)]} <br>`)
+    </script>
+</body>
+</html>

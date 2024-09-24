@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object destruction</title>
+</head>
+<body>
+    <script>
+        const student ={
+            name: 'Rabin Aryal',
+            address: 'Syangja'
+        }
+        const showStudent=({name,address})=>{
+            return `Student name is ${name}. he lives in ${address}`
+        }
+
+const show = showStudent(student)
+document.write(`${show}<br>`) 
+
+const {name,address}=student
+document.write(`${name}<br>`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event image</title>
+    <style>
+        #demoimg{
+            width: 500px;
+            height: 300px;
+            margin: auto;
+        }
+        #demoimg img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="demoimg">
+        <img src="https://as2.ftcdn.net/v2/jpg/05/97/92/25/1000_F_597922554_NchpW6uj35RPOI4yeJeT4ElPxIHbHJlx.jpg" alt="Shiva" onmouseover="demo()" onmouseout="previous()">
+        </div>
+        <script>
+            const demo=()=>{
+                document.querySelector('img').src = "https://m.media-amazon.com/images/I/91MpByZOicL._SY679_.jpg"
+            }
+            const previous=()=>{
+            document.querySelector('img').innerHTML=''
+        }
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atm</title>
+</head>
+<body>
+   <script>
+    const user1 = 'admin'
+    const user2 = 'user'
+    const pin = 1234
+    const userpin = parseInt(prompt("Enter a pin number"))
+
+
+
+    switch(userpin){
+        case pin :
+            const value = parseInt(prompt("Welcome to Atm Service\n 1. Fash cash\n 2.Withdraw\n 3. Balance Inquiry.\n 4. Pin Change\n 5. Cancel"))
+            switch(value){
+                case 1 :
+                    const fastvalue = parseInt(prompt("1.1000\n 2.5000\n 3.10000\n 4.15000\n 5.20000"))
+                    alert(`Please collect your money `)
+                    break
+                    case 2 :
+                        const withdraw = parseInt(prompt("Enter amount to withdraw"))
+                        alert(`Please collect your  money `)
+                        break
+                        case 3 : 
+                        alert(`Your actual balance is 9000000000`)
+                        
+                        case 4 :
+                            const pinchange = parseInt(prompt("Enter new pin"))
+                            alert(`Your pin has been changed `)
+                            break
+                           
+                            
+                       
+                        
+
+            }
+            break
+            default: 
+            alert("Your Card Has Been Terminated")
+
+    }
+   </script>
+</body>
+</html>
